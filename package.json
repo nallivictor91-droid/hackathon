@@ -1,0 +1,21 @@
+{
+  "name": "gemini-chatbot-app",
+  "version": "1.0.0",
+  "description": "Full-stack Gemini LLM Chatbot with clear Frontend and Backend separation",
+  "main": "backend/server.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "dev": "node --watch backend/server.js",
+    "install:backend": "npm --prefix backend install"
+  },
+  "keywords": [
+    "gemini",
+    "llm",
+    "chatbot",
+    "frontend-backend",
+    "express",
+    "ai"
+  ],
+  "author": "",
+  "license": "MIT"
+}
