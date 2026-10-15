@@ -1,0 +1,16 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": "vite",
+  "outputDirectory": "frontend/dist",
+  "buildCommand": "npm --prefix frontend run build",
+  "rewrites": [
+    {
+      "source": "/api/:match*",
+      "destination": "https://hackathon-rjth.onrender.com/api/:match*"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}
