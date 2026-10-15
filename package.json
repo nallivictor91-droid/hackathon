@@ -1,21 +1,26 @@
 {
-  "name": "gemini-chatbot-app",
-  "version": "1.0.0",
-  "description": "Full-stack Gemini LLM Chatbot with clear Frontend and Backend separation",
-  "main": "backend/server.js",
+  "name": "pulseflow-ai-platform",
+  "version": "2.0.0",
+  "description": "PulseFlow AI: Autonomous Workflow Orchestrator & Multi-Tenant Intelligent Pipeline Engine",
   "scripts": {
-    "start": "node backend/server.js",
-    "dev": "node --watch backend/server.js",
-    "install:backend": "npm --prefix backend install"
+    "start": "npm --prefix backend run start",
+    "dev:backend": "npm --prefix backend run dev",
+    "dev:frontend": "npm --prefix frontend run dev",
+    "build:frontend": "npm --prefix frontend run build",
+    "build:backend": "npm --prefix backend run build",
+    "build": "npm run build:frontend && npm run build:backend",
+    "install:all": "npm --prefix backend install && npm --prefix frontend install"
   },
   "keywords": [
-    "gemini",
-    "llm",
-    "chatbot",
-    "frontend-backend",
-    "express",
-    "ai"
+    "pulseflow",
+    "ai",
+    "autonomous-workflows",
+    "gemini-2.5",
+    "google-genai",
+    "hitl",
+    "orchestrator",
+    "supabase"
   ],
-  "author": "",
+  "author": "PulseFlow AI Architecture Team",
   "license": "MIT"
 }

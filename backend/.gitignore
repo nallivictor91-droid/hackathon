@@ -1,0 +1,31 @@
+# Backend environment secrets
+.env
+.env.*
+*.env
+.evn
+.evn.*
+*.evn
+*.local
+.env.local
+!.env.example
+
+# Dependencies
+node_modules/
+
+# Compiled TypeScript outputs
+dist/
+build/
+*.tsbuildinfo
+
+# Logs & temp uploads
+logs/
+*.log
+uploads/
+temp/
+tmp/
+
+# OS and Editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
